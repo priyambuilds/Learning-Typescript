@@ -1,8 +1,12 @@
 import { Expect, Equal } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
+interface Reactangle {
+  width: number;
+  height: number;
+}
 
-const getRectangleArea = (rectangle: { width: number; height: number }) => {
+const getRectangleArea = (rectangle: Reactangle) => {
   return rectangle.width * rectangle.height;
 };
 
