@@ -1,6 +1,9 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type HttpCode = "400" | "401" | "404" | "500" | "200" | "201" | "204";
+type ErrorCodes = "400" | "401" | "404" |;
+type SuccessCodes = "200" | "201" | "204";
+
+type HttpCode = ErrorCodes | SuccessCodes;
 
 const handleErrorCase = (code: string) => {
   // An imaginary function where we only handle the errors
